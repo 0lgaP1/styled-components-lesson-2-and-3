@@ -1,30 +1,26 @@
 import styled, {css} from "styled-components";
-import {MyAnimation} from "./animation/Animation";
+import {MyAnimation} from "./styles/animation/Animation";
 
 
 type StyledBtnPropsType = {
     color?: string;
     fontSize?: string;
-    btnType: "primary" | "outlined";
+    btnType: "primary" | "outlined" | "menu-button";
     active?: boolean;
 }
 
 export const StyledBtn = styled.button<StyledBtnPropsType>`
     border: none;
     border-radius: 10px;
-    /*background-color: #fb3f78;*/
     background-color: ${props => props.color || "#fb3f78"};
     padding: 10px 20px;
-    /*color: snow;*/
-    /*font-size: 2rem;*/
     font-size: ${props => props.fontSize || "2rem"};
     font-weight: bold;
-    
     ${props => props.btnType === "primary" && css<StyledBtnPropsType>`
-        background-color: ${props => props.color || "#fb3f78"};
-        color: snow; 
+    color: snow; 
+        
     &:hover {
-            background-color: #4053cc;
+        background-color: #4053cc;
     }    
     `}
     

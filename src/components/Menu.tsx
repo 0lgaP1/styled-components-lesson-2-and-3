@@ -16,4 +16,13 @@ export const Menu = styled.nav`
     li + li {
         margin-left: 20px;
     }
+
+    li:hover {
+        background-color: #a1b433;
+    }  
 `
+/*
+export const MenuItem = styled.li`
+    list-style: none;
+    gap: normal;
+`;*/
