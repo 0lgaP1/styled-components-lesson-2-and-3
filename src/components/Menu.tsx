@@ -17,9 +17,9 @@ export const Menu = styled.nav`
         margin-left: 20px;
     }
 
-    li:hover {
+   /* li:hover {
         background-color: #a1b433;
-    }  
+    }  */
 `
 /*
 export const MenuItem = styled.li`

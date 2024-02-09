@@ -12,18 +12,18 @@ type StyledBtnPropsType = {
 export const StyledBtn = styled.button<StyledBtnPropsType>`
     border: none;
     border-radius: 10px;
+    margin: 10px;
     background-color: ${props => props.color || "#fb3f78"};
     padding: 10px 20px;
     font-size: ${props => props.fontSize || "2rem"};
     font-weight: bold;
     ${props => props.btnType === "primary" && css<StyledBtnPropsType>`
-    color: snow; 
-        
+   `}
+    color: snow;
     &:hover {
-        background-color: #4053cc;
-    }    
-    `}
-    
+        background-color: #a1b433;
+    }
+   
     ${props => props.btnType === "outlined" && css<StyledBtnPropsType>`
         border: 2px solid ${props => props.color || "#fb3f78"};
         color: 2px solid ${props => props.color || "#fb3f78"};
